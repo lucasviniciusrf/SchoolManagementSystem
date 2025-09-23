@@ -1,0 +1,13 @@
+package com.unifacisa.testeSpringEscola;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class 	TesteSpringEscolaApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TesteSpringEscolaApplication.class, args);
+	}
+
+}
