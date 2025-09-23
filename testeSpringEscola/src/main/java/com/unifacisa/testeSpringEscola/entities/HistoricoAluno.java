@@ -1,5 +1,6 @@
 package com.unifacisa.testeSpringEscola.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -23,6 +24,7 @@ public class HistoricoAluno {
     private String status;
 
     @OneToOne
+    @JsonIgnore
     @JoinColumn(name = "AlunoHistorico", unique = true)
     private Aluno aluno;
 }
