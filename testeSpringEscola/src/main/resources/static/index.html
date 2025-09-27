@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Escola API - Painel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Escola API - Painel</h1>
+
+<div class="container">
+
+    <!-- Alunos -->
+    <section id="alunos-section">
+        <h2>Alunos</h2>
+        <form id="aluno-form">
+            <input type="hidden" id="aluno-id">
+            <input type="text" id="aluno-nome" placeholder="Nome" required>
+            <input type="number" id="aluno-idade" placeholder="Idade" required>
+            <button type="submit">Salvar Aluno</button>
+        </form>
+        <ul id="alunos-list"></ul>
+    </section>
+
+    <!-- Disciplinas -->
+    <section id="disciplinas-section">
+        <h2>Disciplinas</h2>
+        <form id="disciplina-form">
+            <input type="hidden" id="disciplina-id">
+            <input type="text" id="disciplina-nome" placeholder="Nome da Disciplina" required>
+            <button type="submit">Salvar Disciplina</button>
+        </form>
+        <ul id="disciplinas-list"></ul>
+    </section>
+
+    <!-- Histórico -->
+    <section id="historico-section">
+        <h2>Histórico</h2>
+        <form id="historico-form">
+            <input type="hidden" id="historico-id">
+            <input type="number" id="historico-alunoId" placeholder="ID do Aluno" required>
+            <input type="number" id="historico-disciplinaId" placeholder="ID da Disciplina" required>
+            <input type="text" id="historico-nota" placeholder="Nota" required>
+            <button type="submit">Salvar Histórico</button>
+        </form>
+        <ul id="historico-list"></ul>
+    </section>
+
+    <!-- Reitores -->
+    <section id="reitor-section">
+        <h2>Reitores</h2>
+        <form id="reitor-form">
+            <input type="hidden" id="reitor-id">
+            <input type="text" id="reitor-nome" placeholder="Nome do Reitor" required>
+            <button type="submit">Salvar Reitor</button>
+        </form>
+        <ul id="reitor-list"></ul>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
